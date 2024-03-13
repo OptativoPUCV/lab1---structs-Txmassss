@@ -102,3 +102,17 @@ Wed 13 Mar 2024 09:11:34 PM UTC:
  tests:  0|6
 total_score: 10/70
 b1473db
+Wed 13 Mar 2024 09:13:37 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:41:7: error: expected expression before ‘]’ token
+   41 |   arr[] = tempArray[];
+      |       ^
+exercises.c:34:7: error: variable ‘tempArray’ set but not used [-Werror=unused-but-set-variable]
+   34 |   int tempArray[size];
+      |       ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a820670
