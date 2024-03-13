@@ -133,3 +133,14 @@ exercises.c:41:12: error: assignment to ‘int’ from ‘void *’ makes intege
 cc1: all warnings being treated as errors
 Compilation failed
 5a08a10
+Wed 13 Mar 2024 09:19:02 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:41:12: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   41 |   *tempArr = (int*) malloc(sizeof(int) * size);
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+e0e5166
