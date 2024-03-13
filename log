@@ -36,3 +36,14 @@ test.c:91:18: error: implicit declaration of function ‘findMax’; did you mea
 cc1: all warnings being treated as errors
 Compilation failed
 9eb2105
+Wed 13 Mar 2024 08:49:03 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+test.c: In function ‘test_findMax’:
+test.c:91:18: error: implicit declaration of function ‘findMax’; did you mean ‘findmax’? [-Werror=implicit-function-declaration]
+   91 |     int result = findMax(arr, size);
+      |                  ^~~~~~~
+      |                  findmax
+cc1: all warnings being treated as errors
+Compilation failed
+9ba5245
