@@ -122,3 +122,14 @@ Wed 13 Mar 2024 09:13:55 PM UTC:
  tests:  0|6
 total_score: 10/70
 8cd0f3c
+Wed 13 Mar 2024 09:18:41 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:41:12: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   41 |   *tempArr = malloc(sizeof(int) * size);
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+5a08a10
