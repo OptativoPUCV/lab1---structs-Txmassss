@@ -38,7 +38,7 @@ void reverseArray(int arr[], int size)
     tempArray[tempSize] = arr[i];
     tempSize ++;
   }
-  array = tempArray;
+  arr = tempArray;
 }
 
 /*
