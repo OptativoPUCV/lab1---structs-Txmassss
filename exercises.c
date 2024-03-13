@@ -38,7 +38,7 @@ void reverseArray(int arr[], int size)
     tempArr[tempSize] = arr[i];
     tempSize ++;
   }
-  *tempArr = (int*) malloc(sizeof(int) * size);
+  (int*) *tempArr =  malloc(sizeof(int) * size);
 }
 
 /*

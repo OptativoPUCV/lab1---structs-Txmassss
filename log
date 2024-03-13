@@ -144,3 +144,17 @@ exercises.c:41:12: error: assignment to ‘int’ from ‘int *’ makes integer
 cc1: all warnings being treated as errors
 Compilation failed
 e0e5166
+Wed 13 Mar 2024 09:19:21 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:41:3: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   41 |   (int*) *tempArr =  malloc(sizeof(int) * size);
+      |   ^
+exercises.c:41:19: error: lvalue required as left operand of assignment
+   41 |   (int*) *tempArr =  malloc(sizeof(int) * size);
+      |                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+b307b4a
