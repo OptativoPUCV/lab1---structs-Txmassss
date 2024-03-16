@@ -149,7 +149,13 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+                      int anioNacimiento, int anioPublicacion) 
+{
+  strcpy(Libro->titulo, titulo);
+  strcpy(Libro->autor.nombre, nombreAutor);
+  Libro->anioPublicacion = anioPublicacion;
+  Libro->autor.anioNacimiento = anioNacimiento;
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
