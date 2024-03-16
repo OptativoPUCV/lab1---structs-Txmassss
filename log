@@ -202,3 +202,19 @@ Sat 16 Mar 2024 03:18:15 PM UTC:
  tests:  0|4
 total_score: 30/70
 d3228a0
+Sat 16 Mar 2024 03:29:26 PM UTC: 
+ exercises.c | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:86:17: error: statement with no effect [-Werror=unused-value]
+   86 |   for(i < size1 && k < size2)
+      |       ~~~~~~~~~~^~~~~~~~~~~~
+exercises.c:86:29: error: expected ‘;’ before ‘)’ token
+   86 |   for(i < size1 && k < size2)
+      |                             ^
+      |                             ;
+exercises.c:86:29: error: expected expression before ‘)’ token
+cc1: all warnings being treated as errors
+Compilation failed
+998eee9
