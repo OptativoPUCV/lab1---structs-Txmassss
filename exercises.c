@@ -107,7 +107,8 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size)
 {
-  int contAs=0, int contDes=0;
+  int contAs = 0;
+  int contDes = 0;
   
   for(int i = 0; i <= size; i++)
     {
@@ -116,7 +117,6 @@ int checkSorted(int arr[], int size)
 
       else if (arr[i]>=arr[i+1])
         contDes++;
-      
     }
   if(contAs == (size-1))
     return 1;
