@@ -475,3 +475,9 @@ test.c:411: error: expected ‘{’ at end of input
 cc1: all warnings being treated as errors
 Compilation failed
 ead846d
+Sat 16 Mar 2024 03:35:34 PM UTC: 
+ exercises.c | 27 ++++++++++++---------------
+ 1 file changed, 12 insertions(+), 15 deletions(-)
+ tests:  0|4
+total_score: 30/70
+2046bd4
