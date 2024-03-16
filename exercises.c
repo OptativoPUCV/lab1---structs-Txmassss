@@ -60,16 +60,14 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
     *newSize = 0;
     return NULL;
   }
+  
   int k = 0;
   for(int i = 0; i < size; i++)
     {
       if(arr[i] % 2 == 0)
-      {  
-        k++;
-        nuevoArr[k] = arr[i];
-      }
-      
+        nuevoArr[k++] = arr[i];
     }
+  
   *newSize = contador;
   return nuevoArr;
 }
