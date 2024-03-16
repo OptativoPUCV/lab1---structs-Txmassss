@@ -31,14 +31,15 @@ invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) 
 {
-  int tempArr[size];
-  int tempSize = 0;
-  for(int i = size - 1; i > 0; i--)
-  {
-    tempArr[tempSize] = arr[i];
-    tempSize ++;
-  }
-  (int*) *tempArr =  malloc(sizeof(int) * size);
+  int temp;
+  int ultimaPosicion = size - 1;
+  for (int i = 0; i < size ; i++)
+    {
+      temp = arr[i];
+      arr[i] = arr[ultimaPosicion];
+      arr[ultimaPosicion] = temp;
+      ultimaPosicion --;
+    }
 }
 
 /*
