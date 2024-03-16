@@ -238,3 +238,14 @@ Sat 16 Mar 2024 03:32:33 PM UTC:
  tests:  0|4
 total_score: 30/70
 723f31e
+Sat 16 Mar 2024 03:33:55 PM UTC: 
+ exercises.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:99:25: error: operation on ‘k’ may be undefined [-Werror=sequence-point]
+   99 |     result[k++] = arr2[k++];
+      |                        ~^~
+cc1: all warnings being treated as errors
+Compilation failed
+4995fef
