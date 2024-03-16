@@ -669,3 +669,14 @@ exercises.c:197:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 66f4e6b
+Sat 16 Mar 2024 04:22:37 PM UTC: 
+ exercises.c | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:200:1: error: control reaches end of non-void function [-Werror=return-type]
+  200 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+67b0d37
