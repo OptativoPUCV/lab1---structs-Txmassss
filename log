@@ -218,3 +218,17 @@ exercises.c:86:29: error: expected expression before ‘)’ token
 cc1: all warnings being treated as errors
 Compilation failed
 998eee9
+Sat 16 Mar 2024 03:30:35 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:86:17: error: statement with no effect [-Werror=unused-value]
+   86 |   for(i < size1 && k < size2;)
+      |       ~~~~~~~~~~^~~~~~~~~~~~
+exercises.c:86:30: error: expected expression before ‘)’ token
+   86 |   for(i < size1 && k < size2;)
+      |                              ^
+cc1: all warnings being treated as errors
+Compilation failed
+4504e24
