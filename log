@@ -522,3 +522,28 @@ exercises.c:130:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 f1ea99e
+Sat 16 Mar 2024 03:46:48 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:110:3: error: ‘contAs’ undeclared (first use in this function)
+  110 |   contAs=0, contDes=0;
+      |   ^~~~~~
+exercises.c:110:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:110:13: error: ‘contDes’ undeclared (first use in this function)
+  110 |   contAs=0, contDes=0;
+      |             ^~~~~~~
+exercises.c:110:11: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  110 |   contAs=0, contDes=0;
+      |           ^
+exercises.c:128:13: error: expected ‘;’ before ‘:’ token
+  128 |     return 0:
+      |             ^
+      |             ;
+exercises.c:130:1: error: control reaches end of non-void function [-Werror=return-type]
+  130 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1ae4638
