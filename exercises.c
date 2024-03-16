@@ -118,10 +118,10 @@ int checkSorted(int arr[], int size)
       else if (arr[i]>=arr[i+1])
         contDes++;
     }
-  if(contAs == (size-1))
+  if(contAs == (size))
     return 1;
     
-  else if(contDes == (size-1))
+  else if(contDes == (size))
     return -1;
     
   else
