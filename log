@@ -568,3 +568,22 @@ exercises.c:130:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 851e716
+Sat 16 Mar 2024 03:47:10 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:110:17: error: expected identifier or ‘(’ before ‘int’
+  110 |   int contAs=0, int contDes=0;
+      |                 ^~~
+exercises.c:118:9: error: ‘contDes’ undeclared (first use in this function); did you mean ‘contAs’?
+  118 |         contDes++;
+      |         ^~~~~~~
+      |         contAs
+exercises.c:118:9: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:130:1: error: control reaches end of non-void function [-Werror=return-type]
+  130 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+864ff8d
